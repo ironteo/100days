@@ -1,0 +1,285 @@
+Aprendiendo HTML
+
+Etiquetas
+
+///Por convencion en html las etiquetas son escritas es minuscula
+
+Crear una etiqueta h1
+  La etiqueta h1 es la de mas alto nivel, esta etiqueta va desde h1/Nivel mas alto/ a h6/Nivel mas bajo/. Ente mas alto el nivel de la etiqueta as grande se vera el texto.
+
+<h1>Hello</h1>
+<h1>Hello World</h1>
+<h2>CatPhotoApp</h2>
+
+La etiqeta <p> es usada para crear parrafos.
+  Para poder llenar texto se usa tradicionalmente lorem ipsum text, el cual es un generar de texto aleatorio.
+  
+<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff</p> 
+
+Para generar comentarios en HTML se usa la etiqueta <!-- -->
+
+Etiquetas HTML5 main, header, footer, nav, video, article, sectiony otros.
+
+  Etiqueta main
+  
+ Ayuda a los motores de búsqueda y a otros desarrolladores a encontrar el contenido principal de su página.
+ 
+<h2>CatPhotoApp</h2>
+<main>
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</main>
+
+  Etiqueta img
+
+Permite aagregar imgenes a nuestra apuntado a la URL de una imagen específica usando el srcatributo, los img elementos se cierran automáticamente.
+
+Nota: si la imagen es puramente decorativa, se recomienda utilizar un altatributo vacío .
+
+
+<h2>CatPhotoApp</h2>
+<main>
+  <img src="https://bit.ly/fcc-relaxing-cat" alt="imagen de gato" >  
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+</main>
+
+  Etiqueta a
+  
+ Enlace a páginas externas con elementos de ancla, se puede utilizar elementos a( ancla ) para vincular a contenido fuera de su página web.
+
+<h2>CatPhotoApp</h2>
+<main>
+  <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+  <a href="https://freecatphotoapp.com">cat photos</a>
+</main>
+
+  Enlace a secciones internas de una página con elementos de ancla
+
+Para crear un enlace interno, asigne el hrefatributo de un enlace a un símbolo de almohadilla #más el valor del idatributo 
+para el elemento al que desea vincular internamente, generalmente más abajo en la página. Luego, debe agregar el mismo idatributo al elemento al 
+que está vinculando. Un ides un atributo que describe de forma única un elemento.
+
+<h2>CatPhotoApp</h2>
+<main>
+  <a href="#footer">Jump to Bottom</a>
+
+  <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+</main>
+
+<footer id="footer">Copyright Cat Photo App</footer>
+
+  Crear un enlace vacio o "muerto", se usa la almoadilla #, con esto el enlace no va a ningun sitio.
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+  
+    Convertir una imagen en un enlace
+
+Puede convertir elementos en enlaces anidando dentro de un elemento a.
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+  
+    Lista desordenada
+ 
+Las listas desordenadas comienzan con un <ul>elemento de apertura , seguido de cualquier número 
+de <li>elementos. Finalmente, las listas desordenadas se cierran con un</ul>
+
+  <ul>
+    <li>milk</li>
+    <li>cheese</li>
+    <li>sleep</li>
+  </ul>
+   
+  Lista ordenada
+
+Las listas ordenadas comienzan con un <ol>elemento de apertura , seguido de cualquier número de <li>elementos. Finalmente, las 
+listas ordenadas se cierran con la </ol>etiqueta.
+
+<ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  
+  FORMULARIOS
+crear un campo de texto
+
+input Los elementos son una forma conveniente de obtener información de su usuario.
+
+Puede crear una entrada de texto como esta:
+
+<input type="text">
+
+Tenga en cuenta que los inputelementos se cierran automáticamente.
+
+El texto del marcador de posición es lo que se muestra en su inputelemento antes de que su usuario haya ingresado algo
+
+<input type="text" placeholder="cat photo URL">
+
+crear un elemento de formulario
+Puede crear formularios web que envíen datos a un servidor utilizando únicamente HTML puro. Puede hacer esto especificando una acción en su formelemento.
+
+<form action="/url-where-you-want-to-submit-form-data"></form>
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+  <input type="text" placeholder="cat photo URL">
+  </form>
+  
+ agregar un botón Enviar a un formulario
+ 
+Agreguemos un submitbotón a su formulario. Al hacer clic en este botón, se enviarán los datos de su 
+formulario a la URL que especificó con el actionatributo de su formulario .
+
+<button type="submit">this button submits the form</button>
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL">
+    <button type="submit">submit</button>
+  </form>
+  
+  use HTML5 para requerir un campo
+  
+  Puede solicitar campos de formulario específicos para que su usuario no pueda enviar su formulario hasta que los haya completado.
+
+Por ejemplo, si desea que un campo de entrada de texto sea obligatorio, puede agregar el atributo requireddentro de su inputelemento, así:<input type="text" required>
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+ 
+  cree un conjunto de botones de opción
+Puede usar botones de opción para las preguntas en las que desea que el usuario solo le dé una respuesta entre múltiples opciones.
+
+Los botones de radio son un tipo de input.
+
+Cada uno de sus botones de opción se puede anidar dentro de su propio labelelemento. Al envolver un 
+inputelemento dentro de un labelelemento, automáticamente asociará la entrada del botón de radio con el elemento de etiqueta que lo rodea.
+
+Todos los botones de opción relacionados deben tener el mismo nameatributo para crear un grupo de botones de 
+opción. Al crear un grupo de radio, al seleccionar cualquier botón de radio se anulará automáticamente la selección de los otros 
+botones dentro del mismo grupo, lo que garantiza que el usuario solo proporcione una respuesta.
+  
+  Se considera una buena práctica establecer un foratributo en el labelelemento, con un valor que coincida con el valor del idatributo 
+  del inputelemento. Esto permite que las tecnologías de asistencia creen una relación vinculada entre la etiqueta y el inputelemento secundario
+  
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+ 
+ cree un conjunto de casillas de verificación
+ 
+ Las casillas de verificación son un tipo de input.
+
+Cada una de sus casillas de verificación se puede anidar dentro de su propio labelelemento. Al envolver un inputelemento dentro de un labelelemento, automáticamente asociará la entrada de la casilla de verificación con el elemento de etiqueta que lo rodea.
+
+Todas las entradas de casillas de verificación relacionadas deben tener el mismo nameatributo.
+
+Se considera una buena práctica definir explícitamente la relación entre una casilla de verificación inputy su correspondiente labelestableciendo el foratributo en el labelelemento para que coincida con el idatributo del inputelemento asociado .
+
+<label for="loving">
+  <input id="loving" type="checkbox" name="personality"> 
+  Loving
+</label>
+
+<label for="lazy">
+  <input id="lazy" type="checkbox" name="personality"> 
+  Lazy
+</label>
+    
+<label for="energetic">
+<input id="energetic" type="checkbox" name="personality"> 
+Energetic
+</label><br>
+    
+use el atributo de valor con botones de opción y casillas de verificación
+
+Cuando se envía un formulario, los datos se envían al servidor e incluyen entradas para las opciones seleccionadas. Entradas de tipo radioe checkboxinforman sus valores desde el valueatributo.
+Cuando el usuario envía el formulario con la indooropción seleccionada, los datos del formulario incluirá la línea: indoor-outdoor=indoor. Esto es de los atributos namey valuede la entrada "interior".
+
+Si omite el valueatributo, los datos del formulario enviado utilizan el valor predeterminado, que es on. En este escenario, si el usuario hizo clic en la opción "interior" y envió el formulario, los datos del formulario resultante serían indoor-outdoor=on, lo cual no es útil. Por lo tanto, el valueatributo debe establecerse en algo para identificar la opción.
+  
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving"> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+  
+ marque los botones de opción y las casillas de verificación de forma predeterminada
+ 
+Puede establecer una casilla de verificación o un botón de opción para que se marque de forma predeterminada mediante el checkedatributo.
+
+Para hacer esto, simplemente agregue la palabra "comprobado" al interior de un elemento de entrada
+
+<form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+
+anida muchos elementos dentro de un solo elemento div
+
+El divelemento, también conocido como elemento de división, es un contenedor de uso general para otros elementos.
+
+El divelemento es probablemente el elemento HTML más utilizado de todos.
+
+Al igual que cualquier otro elemento que no se cierre automáticamente, puede abrir un divelemento con <div>y cerrarlo en otra línea con </div>.
+
+declare el tipo de documento de un documento HTML
+Los desafíos hasta ahora han cubierto elementos HTML específicos y sus usos. Sin embargo, hay algunos elementos que dan una estructura general a su página y deben incluirse en cada documento HTML.
+
+En la parte superior de su documento, debe indicarle al navegador qué versión de HTML está usando su página. HTML es un lenguaje en evolución y se actualiza periódicamente. La mayoría de los principales navegadores admiten la última especificación, que es HTML5. Sin embargo, las páginas web más antiguas pueden utilizar versiones anteriores del idioma.
+
+Usted le dice al navegador esta información agregando la <!DOCTYPE ...>etiqueta en la primera línea, donde la ...parte es la versión de HTML. Para HTML5, usa <!DOCTYPE html>.
+
+Las !mayúsculas y DOCTYPEson importantes, especialmente para los navegadores más antiguos. El htmlno es sensible a mayúsculas.
+
+A continuación, el resto de su código HTML debe estar envuelto en htmletiquetas. La apertura <html>va directamente debajo de la <!DOCTYPE html>línea y el cierre </html>al final de la página.
+
+definir el encabezado y el cuerpo de un documento HTML
+Puede agregar otro nivel de organización en su documento HTML dentro de las htmletiquetas con los elementos heady body. Cualquier marca con información sobre su página entraría en la headetiqueta. Luego, cualquier marca con el contenido de la página (lo que se muestra para un usuario) iría a la bodyetiqueta.
+
+Los elementos de metadatos, tales como link, meta, title, y style, por lo general van en el interior del headelemento.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
